@@ -1,0 +1,25 @@
+{
+  "name": "hpc-contracts",
+  "version": "1.0.0",
+  "description": "HPVideo (HPC) BEP-20 Token Smart Contracts",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:testnet": "hardhat run scripts/deploy.ts --network bscTestnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.ts --network bscMainnet",
+    "deploy:token:testnet": "hardhat run scripts/deploy-token-only.ts --network bscTestnet",
+    "deploy:token:mainnet": "hardhat run scripts/deploy-token-only.ts --network bscMainnet"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "hardhat": "^2.22.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.1.0",
+    "@openzeppelin/merkle-tree": "^1.0.8",
+    "dotenv": "^17.3.1"
+  }
+}

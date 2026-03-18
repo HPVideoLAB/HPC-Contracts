@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+artifacts/
+cache/
+typechain-types/
+
+# Environment variables (PRIVATE KEYS!)
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# PDF generation scripts and temp files
+docs/generate_*.py
+docs/update_*.py
+docs/convert_*.py
+docs/open_*.py
+docs/convert.ps1
+docs/*_check.png
+docs/v3_*.png
+
+# Coverage
+coverage/
+coverage.json
